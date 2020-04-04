@@ -16,7 +16,7 @@ This is a **TEMPLATE** project for creating a Google Chrome Browser extension us
 
 # Quick Start
 
-1. 'yarn install', Install dependencies for this project.
+1. `yarn`, Install dependencies for this project.
 
 2. `yarn build`, Builds the app for production to the `build` folder, optimizing the build for the best performance.
 
@@ -38,7 +38,7 @@ If you do have have the necessary development tools, you have the option to buil
 
 1. `yarn clean`: Remove any built artifacts.
 
-2. `yarn install`: Install dependencies for this project.
+2. `yarn` and `yarn install`: Install dependencies for this project.
 
 3. `yarn build`: Builds the extension for production to the `build` folder, optimizing the build for the best performance.
 
