@@ -1,12 +1,14 @@
 # template: chrome reactjs extension
 
+> The <a href="https://levelup.gitconnected.com/how-to-use-react-js-to-create-chrome-extension-in-5-minutes-2ddb11899815">article</a> written by <a href="https://levelup.gitconnected.com/@chen">Hu Chen</a> was the motivation to create this template repository.
+
 > When added as an Google Chrome Browser Extension, a new tab on the browser will show the the base ReactJS application (see screenshot below).
 
 ![alt text](doc/template.png "Base reactjs application as a Chrome extension")
 
 # Overview
 
-This is a **TEMPLATE** project for creating a Google Chrome Browser extension using ReactJS. Modifications to the standard `create-react-app` include the following.
+This is a **TEMPLATE** repository for creating a Google Chrome Browser extension using ReactJS. Modifications to the standard `create-react-app` include the following.
 
 * icons
 
@@ -52,7 +54,7 @@ If you do have have the necessary development tools, you have the option to buil
 
 # References
 
-1. A tutorial from <a href="https://levelup.gitconnected.com/how-to-use-react-js-to-create-chrome-extension-in-5-minutes-2ddb11899815">Hu Chen</a>
+1. A <a href="https://levelup.gitconnected.com/how-to-use-react-js-to-create-chrome-extension-in-5-minutes-2ddb11899815">tutorial</a> by <a href="https://levelup.gitconnected.com/@chen">Hu Chen</a>
 
 2. https://github.com/facebook/create-react-app
 
