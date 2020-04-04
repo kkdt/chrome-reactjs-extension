@@ -1,68 +1,55 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# template: chrome reactjs extension
 
-## Available Scripts
+> When added as an Google Chrome Browser Extension, a new tab on the browser will show the the base ReactJS application (see screenshot below).
 
-In the project directory, you can run:
+![alt text](doc/template.png "Base reactjs application as a Chrome extension")
 
-### `yarn start`
+# Overview
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This is a **TEMPLATE** project for creating a Google Chrome Browser extension using ReactJS. Modifications to the standard `create-react-app` include the following.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+* icons
 
-### `yarn test`
+* additional yarn scripts
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* `manifest.json` to follow <a href="https://developer.chrome.com/extensions/manifest">Google Manifest</a>
 
-### `yarn build`
+# Quick Start
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. `yarn build`, Builds the app for production to the `build` folder, optimizing the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+2. Add the <a href="https://developer.chrome.com/extensions/getstarted">Google Chrome Extension</a> by pointing to the `build` folder from Step 1.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Developing in Vagrant
 
-### `yarn eject`
+If you do have have the necessary development tools, you have the option to build and development in a Vagrant environment.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Execute: `vagrant up`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Execute: `vagrant ssh`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Navigate to `/vagrant` and you should be in this project directory within the guest server
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. Build and add the extension folder
 
-## Learn More
+# Yarn Commands
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. `yarn clean`: Remove any built artifacts.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. `yarn build`: Builds the extension for production to the `build` folder, optimizing the build for the best performance.
 
-### Code Splitting
+3. `yarn dist`: Package the extension into a tar.gz file to the `dist` folder.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+4. `yarn test`: Launches the test runner in the interactive watch mode, see [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
 
-### Analyzing the Bundle Size
+5. `yarn eject`: This is a one-way operation - once you `eject`, you can not go back! (see notes below)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+> If you are not satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project. Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you are on your own. You do not have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you could not customize it when you are ready for it.
 
-### Making a Progressive Web App
+# References
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+1. A tutorial from <a href="https://levelup.gitconnected.com/how-to-use-react-js-to-create-chrome-extension-in-5-minutes-2ddb11899815">Hu Chen</a>
 
-### Advanced Configuration
+2. https://github.com/facebook/create-react-app
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+3. <a href="https://www.iconfinder.com/iconsets/social-media-and-payment">Icons</a> provided by <a href="https://www.iconfinder.com/">IconFinder</a>
