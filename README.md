@@ -2,19 +2,25 @@
 
 > The <a href="https://levelup.gitconnected.com/how-to-use-react-js-to-create-chrome-extension-in-5-minutes-2ddb11899815">article</a> written by <a href="https://levelup.gitconnected.com/@chen">Hu Chen</a> was the motivation to create this template repository.
 
-> When added as an Google Chrome Browser Extension, a new tab on the browser will show the the base ReactJS application (see screenshot below).
-
-![alt text](doc/template.png "Base reactjs application as a Chrome extension")
-
 # Overview
 
-This is a **TEMPLATE** repository for creating a Google Chrome Browser extension using ReactJS. Modifications to the standard `create-react-app` include the following.
+This is a **TEMPLATE** repository for creating a Google Chrome Browser extension or Mozilla Firefox addon using ReactJS. When added as an extension/addon to its respective browser, a new tab on the browser will show the the base ReactJS application (see screenshots below). Modifications to the standard `create-react-app` include the following.
 
 * icons
 
 * additional yarn scripts
 
 * `manifest.json` to follow <a href="https://developer.chrome.com/extensions/manifest">Google Manifest</a>
+
+## Google Chrome Browser
+
+![alt text](doc/template.png "Base reactjs application as a Chrome extension")
+
+## Mozilla Firefox Browser
+
+This project also works as a Firefox addon. Out of the box, Firefox supports the `favicon.ico` such that a new tab in Firefox shows the icon on the tab; Chrome does not.
+
+![alt text](doc/firefox.png "Base reactjs application as a Firefox addon")
 
 # Quick Start
 
